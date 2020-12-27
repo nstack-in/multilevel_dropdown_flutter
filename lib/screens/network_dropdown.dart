@@ -63,7 +63,7 @@ class _NetworkDropDownState extends State<NetworkDropDown> {
                 child: Text(postOffice.districtsName),
               );
             }).toList(),
-            onChanged: onDistrictchange,
+            onChanged: onDistrictChange,
           ),
           // Districts Dropdown Ends here
         ],
@@ -85,7 +85,7 @@ class _NetworkDropDownState extends State<NetworkDropDown> {
     });
   }
 
-  void onDistrictchange(district) {
+  void onDistrictChange(district) {
     setState(() {
       selectedDistrict = district;
     });
