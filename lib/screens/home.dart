@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:multilevel_dropdown_flutter/screens/network_dropdown.dart';
 import 'package:multilevel_dropdown_flutter/screens/static_dropdown.dart';
 
 class HomePage extends StatelessWidget {
@@ -34,5 +35,9 @@ class HomePage extends StatelessWidget {
     Navigator.push(context, route);
   }
 
-  void _networkDropDown(context) {}
+  void _networkDropDown(context) {
+    WidgetBuilder builder = (_) => NetworkDropDown();
+    Route route = MaterialPageRoute(builder: builder);
+    Navigator.push(context, route);
+  }
 }
