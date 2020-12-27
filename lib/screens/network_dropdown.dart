@@ -33,7 +33,7 @@ class _NetworkDropDownState extends State<NetworkDropDown> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Network Dropdown'),
+        title: Text('Network Multi Level Dropdown'),
       ),
       body: ListView(
         padding: EdgeInsets.all(20.0),
@@ -52,6 +52,7 @@ class _NetworkDropDownState extends State<NetworkDropDown> {
             onChanged: onStateChange,
           ),
           // State Dropdown Ends here
+          SizedBox(height: 60.0),
           // Districts Dropdown
           DropdownButton<PostOffice>(
             hint: Text('District'),

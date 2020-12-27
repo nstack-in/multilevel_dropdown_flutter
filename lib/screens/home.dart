@@ -9,18 +9,18 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Multi Level Demo'),
       ),
-      body: Center(
-        child: Row(
+      body: Container(
+        padding: EdgeInsets.symmetric(horizontal: 40.0),
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             RaisedButton(
-              child: Container(child: Text('Static Demo')),
+              child: Center(child: Text('Static Demo')),
               onPressed: () => _staticDropDown(context),
             ),
-            SizedBox(width: 20.0),
+            SizedBox(height: 60.0),
             RaisedButton(
-              child: Container(child: Text('Network Demo')),
+              child: Center(child: Text('Network Demo')),
               onPressed: () => _networkDropDown(context),
             ),
           ],

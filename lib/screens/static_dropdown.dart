@@ -18,7 +18,7 @@ class _StaticDropDownState extends State<StaticDropDown> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Multi Level Dropdown'),
+        title: Text('Static Multi Level Dropdown'),
       ),
       body: ListView(
         padding: EdgeInsets.all(20.0),
@@ -49,7 +49,7 @@ class _StaticDropDownState extends State<StaticDropDown> {
             },
           ),
           // Country Dropdown Ends here
-
+          SizedBox(height: 60.0),
           // Province Dropdown
           DropdownButton<String>(
             hint: Text('Province'),
